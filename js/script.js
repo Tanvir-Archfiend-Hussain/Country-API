@@ -10,6 +10,10 @@ searchBtn.addEventListener("click", () => {
   fetch(finalURL)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      console.log(data[0]);
+      console.log(data[0].continents);
+      console.log(data[0].flags);
+      console.log(data[0].languages);
+      console.log(data[0].timezones);
     });
 });
